@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TensorFlowXamarin", "TensorFlowXamarin.csproj", "{1557F11A-244E-4DCF-BB90-B01C916E84E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello_TF", "Hello_TF\Hello_TF.csproj", "{EE71D3E3-F3ED-46D6-BCA9-516F00B90524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1557F11A-244E-4DCF-BB90-B01C916E84E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1557F11A-244E-4DCF-BB90-B01C916E84E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1557F11A-244E-4DCF-BB90-B01C916E84E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1557F11A-244E-4DCF-BB90-B01C916E84E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE71D3E3-F3ED-46D6-BCA9-516F00B90524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE71D3E3-F3ED-46D6-BCA9-516F00B90524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE71D3E3-F3ED-46D6-BCA9-516F00B90524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE71D3E3-F3ED-46D6-BCA9-516F00B90524}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
