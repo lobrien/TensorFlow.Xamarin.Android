@@ -41,22 +41,6 @@ namespace Hello_TF
 
 			try
 			{
-				Java.Lang.JavaSystem.LoadLibrary("tensorflow_inference");
-				var r = new RunStats();
-				var g = new Graph();
-				var sess = new Session(g);
-				var runner = sess.InvokeRunner();
-				byte[] content = null;
-				using (var f = Assets.Open("TF_LSTM_Inference.pb"))
-				using (StreamReader sr = new StreamReader(f))
-				using(var ms = new MemoryStream())
-				{
-					sr.BaseStream.CopyTo(ms);
-					content = ms.ToArray();
-				}
-				long hash = byteHash(content);
-				g.ImportGraphDef(content);
-
 				TensorFlowInferenceInterface tfi = new TensorFlowInferenceInterface(Assets, "file:///android_asset/TF_LSTM_Inference.pb");
 				float[] inputSeaLevels = new float[] {
 		  4.92F, 2.022F, -0.206F, 2.355F, 4.08F, 1.828F, -0.005F, 2.83F,
