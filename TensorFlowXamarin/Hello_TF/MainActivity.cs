@@ -47,7 +47,7 @@ namespace Hello_TF
 				var sess = new Session(g);
 				var runner = sess.InvokeRunner();
 				byte[] content = null;
-				using (var f = Assets.Open("tensorflow_inception_graph.pb"))
+				using (var f = Assets.Open("TF_LSTM_Inference.pb"))
 				using (StreamReader sr = new StreamReader(f))
 				using(var ms = new MemoryStream())
 				{
@@ -89,7 +89,7 @@ namespace Hello_TF
 				tfi.Run(new String[] { OUTPUT_VARIABLE_NAME });
 				float[] predictions = new float[OUTPUT_SIZE];
 				tfi.Fetch(OUTPUT_VARIABLE_NAME, predictions);
-
+				button.Text = predictions[0].ToString();
 			}
 			catch (Exception x)
 			{
